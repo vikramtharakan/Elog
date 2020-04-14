@@ -10,7 +10,7 @@ Twist: The actual model created won't be able to work immediately as the data it
 * <b>elog_etl.ipynb</b>: Jupyter notebook describing extracting/cleaning/storing the data
 * <b>model.ipynb</b>: Jupyter notebook describing the steps taken to create the model
 * <b>elog_data_2011.db</b>: Cleaned and tagged entries from 2011. The only accurate data we have at the moment. Will hopefully add another accuracte dataset in the near future
-
+* <b>elog_all_data.db</b>: All entries from 2007-2018, excluding tags (disregarding 2019 onwards because downtime was weird. May want to include this, tbd). Can use this for unsupervised learning approach (try and learn FACET and LCLS).
 
 
 #### Files used for practice
