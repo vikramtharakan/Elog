@@ -7,10 +7,21 @@ Twist: The actual model created won't be able to work immediately as the data it
 
 ## Files
 #### Relevant Files
+<u>Data</u>
 * <b>elog_etl.ipynb</b>: Jupyter notebook describing extracting/cleaning/storing the data
-* <b>model.ipynb</b>: Jupyter notebook describing the steps taken to create the model
-* <b>elog_data_2011.db</b>: Cleaned and tagged entries from 2011. The only accurate data we have at the moment. Will hopefully add another accuracte dataset in the near future
-* <b>elog_all_data.db</b>: All entries from 2007-2018, excluding tags (disregarding 2019 onwards because downtime was weird. May want to include this, tbd). Can use this for unsupervised learning approach (try and learn FACET and LCLS).
+* <b>elog_all_data*.db</b>: Multiple files (likely 10 numbering 0-9) that contain all the cleaned data from 2007 to 2018. Had to divide it up due to space issues on Github. All of these files will be used to train an unsupervied model using LSA `LSA_model.ipynb`.
+* <b>elog_data_2011.db</b>: Only contains cleaned, <i>tagged</i>, entries from 2007-2011 (the range we can "trust"). Will be used to train supervised NLP model in the Models section `model.ipynb`.
+
+<u>Models</u>
+* <b>model.ipynb</b>: Jupyter notebook describing the steps taken to create the supervised NLP learning model
+* <b>LSA_model.ipynb</b>: Jupyter notebook describing the steps taken to create the unsupervised LSA learning model
+
+
+<br>
+#### Less Relevant Files
+<u>Data</u>
+* <b>elog_etl_practice.ipynb</b>: Notebook used practicing and experimenting during the cleaning stage
+
 
 
 #### Files used for practice
