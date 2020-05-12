@@ -7,14 +7,17 @@ Twist: The actual model created won't be able to work immediately as the data it
 
 ## Files
 #### Relevant Files
-<u>Data</u>
+<b><u>Data</u></b>
 * <b>elog_etl.ipynb</b>: Jupyter notebook describing extracting/cleaning/storing the data
-* <b>elog_all_data*.db</b>: Multiple files (likely 10 numbering 0-9) that contain all the cleaned data from 2007 to 2018. Had to divide it up due to space issues on Github. All of these files will be used to train an unsupervied model using LSA `LSA_model.ipynb`.
-* <b>elog_data_2011.db</b>: Only contains cleaned, <i>tagged</i>, entries from 2007-2011 (the range we can "trust"). Will be used to train supervised NLP model in the Models section `model.ipynb`.
+* <b>elog_data.db</b>: Large file (144MB) stored using git's LFS library (see https://git-lfs.github.com/). This .db file was created using the elog_etl.ipynb notebook and contains 2 tables that will be used by the notebooks in the model section to train learning algorithms.
+    <ol>
+        <li><u>elog_data_2011:</u> Only contains cleaned, <i>tagged</i>, entries from 2007-2011 (the range we can "trust"). Will be used to train supervised NLP model in the Models section `model.ipynb`.</li>
+        <li><u>elog_all_data:</u> contain all the cleaned data from 2007 to 2018. Very Large table. This will be used to train an unsupervied model using LSA in `Unsupervised_model.ipynb`.</li>
+    </ol>
 
-<u>Models</u>
+<b><u>Models</u></b>
 * <b>model.ipynb</b>: Jupyter notebook describing the steps taken to create the supervised NLP learning model
-* <b>LSA_model.ipynb</b>: Jupyter notebook describing the steps taken to create the unsupervised LSA learning model
+* <b>Unsupervised_model.ipynb</b>: Jupyter notebook describing the steps taken to create the unsupervised LSA learning model
 
 
 <br>
@@ -23,8 +26,3 @@ Twist: The actual model created won't be able to work immediately as the data it
 * <b>elog_etl_practice.ipynb</b>: Notebook used practicing and experimenting during the cleaning stage
 
 
-
-#### Files used for practice
-* <b>elog_etl.practice.ipynb</b>: Jupyter notebook used to test out ideas for extracting/cleaning/storing data
-* <b>elog.ipynb</b>: Jupyter notebook contains all the steps taken from extracting data to creating the model
-* <b>elog_data.db</b>: Practicing writing data to database.
