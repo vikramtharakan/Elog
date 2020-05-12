@@ -19,8 +19,8 @@ Twist: The actual model created won't be able to work immediately as the data it
 * <b>model.ipynb</b>: Jupyter notebook describing the steps taken to create the supervised NLP learning model
 * <b>Unsupervised_model.ipynb</b>: Jupyter notebook describing the steps taken to create the unsupervised LSA learning model
 
-
 <br>
+
 #### Less Relevant Files
 <u>Data</u>
 * <b>elog_etl_practice.ipynb</b>: Notebook used practicing and experimenting during the cleaning stage
